@@ -5,12 +5,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/air
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/air/proprietary/vendor/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk \
-    vendor/xiaomi/air/proprietary/vendor/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk \
-    vendor/xiaomi/air/proprietary/vendor/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk \
-    vendor/xiaomi/air/proprietary/vendor/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk \
-    vendor/xiaomi/air/proprietary/vendor/app/NetworkStackResOverlay/NetworkStackResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/NetworkStackResOverlay/NetworkStackResOverlay.apk \
-    vendor/xiaomi/air/proprietary/vendor/app/TetheringResOverlay/TetheringResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/TetheringResOverlay/TetheringResOverlay.apk \
     vendor/xiaomi/air/proprietary/vendor/bin/AgentTest:$(TARGET_COPY_OUT_VENDOR)/bin/AgentTest \
     vendor/xiaomi/air/proprietary/vendor/bin/MI_IC:$(TARGET_COPY_OUT_VENDOR)/bin/MI_IC \
     vendor/xiaomi/air/proprietary/vendor/bin/MI_RIC:$(TARGET_COPY_OUT_VENDOR)/bin/MI_RIC \
@@ -1786,48 +1780,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/air/proprietary/vendor/etc/usb_audio_accessory_only_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_accessory_only_policy_configuration.xml \
     vendor/xiaomi/air/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/xiaomi/air/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.boot@1.2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.boot@1.2.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.health-service.example.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.health-service.example.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.identity@4.0-service.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.identity@4.0-service.mitee.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.security.keymint-service.mitee.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.security.secureclock-service.mitee.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.sensors-multihal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.sensors-multihal.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.usb-aidl-service.mediatek.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.usb-aidl-service.mediatek.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.usb.gadget-service.mediatek.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.usb.gadget-service.mediatek.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.hostapd.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.supplicant.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/bluetooth_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/bluetooth_audio.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/dumpstate-xiaomi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/dumpstate-xiaomi.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/em_hal_service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/em_hal_service.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/gnss-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/gnss-default.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/gnss@2.1-service-mediatek.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/gnss@2.1-service-mediatek.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/lbs_hidl_service@1.0.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/lights-mtk-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/lights-mtk-default.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/manifest_cameraproviderhidl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_cameraproviderhidl.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/manifest_hwcomposer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_hwcomposer.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.otrpagent@2.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.otrpagent@2.0.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/memtrack-mediatek.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/memtrack-mediatek.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/mrm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/mrm.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/mtkgnss-batching.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/mtkgnss-batching.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/mtkpower_applist-mtk-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/mtkpower_applist-mtk-default.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/power-mediatek.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/power-mediatek.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.mimd@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.mimd@1.0-service.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@4.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.misys@4.0.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest/vibrator-mtk-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vibrator-mtk-default.xml \
-    vendor/xiaomi/air/proprietary/vendor/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest.xml \
     vendor/xiaomi/air/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/xiaomi/air/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/xiaomi/air/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
@@ -3638,14 +3590,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/air/proprietary/vendor/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta \
     vendor/xiaomi/air/proprietary/vendor/mitee/ta/e5140b33-76fa-4c63-ab18062caab2fb5c.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/e5140b33-76fa-4c63-ab18062caab2fb5c.ta \
     vendor/xiaomi/air/proprietary/vendor/mitee/ta/e97c270e-a5c4-4c58-bcd3384a2fa2539e.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/e97c270e-a5c4-4c58-bcd3384a2fa2539e.ta \
-    vendor/xiaomi/air/proprietary/vendor/overlay/CellbroadcastUIResOverlay/CellbroadcastUIResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/CellbroadcastUIResOverlay/CellbroadcastUIResOverlay.apk \
-    vendor/xiaomi/air/proprietary/vendor/overlay/FrameworkResOverlay/FrameworkResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/FrameworkResOverlay/FrameworkResOverlay.apk \
-    vendor/xiaomi/air/proprietary/vendor/overlay/FrameworkResOverlayExt/FrameworkResOverlayExt.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/FrameworkResOverlayExt/FrameworkResOverlayExt.apk \
-    vendor/xiaomi/air/proprietary/vendor/overlay/MtkSettingsResOverlay/MtkSettingsResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MtkSettingsResOverlay/MtkSettingsResOverlay.apk \
-    vendor/xiaomi/air/proprietary/vendor/overlay/SettingsProviderResOverlay/SettingsProviderResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/SettingsProviderResOverlay/SettingsProviderResOverlay.apk \
-    vendor/xiaomi/air/proprietary/vendor/overlay/WifiResMainlineOverlay/WifiResMainlineOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/WifiResMainlineOverlay/WifiResMainlineOverlay.apk \
-    vendor/xiaomi/air/proprietary/vendor/overlay/WifiResOverlay/WifiResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/WifiResOverlay/WifiResOverlay.apk \
-    vendor/xiaomi/air/proprietary/vendor/priv-app/GpuGameDriver.mt6835/GpuGameDriver.mt6835.apk:$(TARGET_COPY_OUT_VENDOR)/priv-app/GpuGameDriver.mt6835/GpuGameDriver.mt6835.apk \
     vendor/xiaomi/air/proprietary/vendor/res/images/lcd_test_00.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_00.png \
     vendor/xiaomi/air/proprietary/vendor/res/images/lcd_test_01.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_01.png \
     vendor/xiaomi/air/proprietary/vendor/res/images/lcd_test_02.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_02.png \
@@ -3718,19 +3662,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/air/proprietary/odm/etc/selinux/precompiled_sepolicy.plat_sepolicy_and_mapping.sha256:$(TARGET_COPY_OUT_ODM)/etc/selinux/precompiled_sepolicy.plat_sepolicy_and_mapping.sha256 \
     vendor/xiaomi/air/proprietary/odm/etc/selinux/precompiled_sepolicy.system_ext_sepolicy_and_mapping.sha256:$(TARGET_COPY_OUT_ODM)/etc/selinux/precompiled_sepolicy.system_ext_sepolicy_and_mapping.sha256 \
     vendor/xiaomi/air/proprietary/odm/etc/setting.xml:$(TARGET_COPY_OUT_ODM)/etc/setting.xml \
-    vendor/xiaomi/air/proprietary/odm/etc/vintf/manifest/vendor.xiaomi.hardware.fx.tunnel@1.0-service.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/vendor.xiaomi.hardware.fx.tunnel@1.0-service.xml \
-    vendor/xiaomi/air/proprietary/odm/etc/vintf/manifest_c3vcn.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_c3vcn.xml \
-    vendor/xiaomi/air/proprietary/odm/etc/vintf/manifest_c3vcn_ss.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_c3vcn_ss.xml \
-    vendor/xiaomi/air/proprietary/odm/etc/vintf/manifest_c3vcnl.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_c3vcnl.xml \
-    vendor/xiaomi/air/proprietary/odm/etc/vintf/manifest_c3vcnl_ss.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_c3vcnl_ss.xml \
-    vendor/xiaomi/air/proprietary/odm/etc/vintf/manifest_c3vg.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_c3vg.xml \
-    vendor/xiaomi/air/proprietary/odm/etc/vintf/manifest_c3vg_ss.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_c3vg_ss.xml \
-    vendor/xiaomi/air/proprietary/odm/etc/vintf/manifest_c3vgl.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_c3vgl.xml \
-    vendor/xiaomi/air/proprietary/odm/etc/vintf/manifest_c3vgl_ss.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_c3vgl_ss.xml \
-    vendor/xiaomi/air/proprietary/odm/etc/vintf/manifest_c3vin.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_c3vin.xml \
-    vendor/xiaomi/air/proprietary/odm/etc/vintf/manifest_c3vin_ss.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_c3vin_ss.xml \
-    vendor/xiaomi/air/proprietary/odm/etc/vintf/manifest_c3vinl.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_c3vinl.xml \
-    vendor/xiaomi/air/proprietary/odm/etc/vintf/manifest_c3vinl_ss.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_c3vinl_ss.xml \
     vendor/xiaomi/air/proprietary/odm/lib/libmfido_mitee.so:$(TARGET_COPY_OUT_ODM)/lib/libmfido_mitee.so \
     vendor/xiaomi/air/proprietary/odm/lib/libmlipay_mitee.so:$(TARGET_COPY_OUT_ODM)/lib/libmlipay_mitee.so \
     vendor/xiaomi/air/proprietary/odm/lib/libmlipay_mitee@1.1.so:$(TARGET_COPY_OUT_ODM)/lib/libmlipay_mitee@1.1.so \
@@ -3776,48 +3707,30 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/air/proprietary/system_ext/apex/com.android.vndk.v30.apex:$(TARGET_COPY_OUT_SYSTEM_EXT)/apex/com.android.vndk.v30.apex \
     vendor/xiaomi/air/proprietary/system_ext/apex/com.android.vndk.v31.apex:$(TARGET_COPY_OUT_SYSTEM_EXT)/apex/com.android.vndk.v31.apex \
     vendor/xiaomi/air/proprietary/system_ext/apex/com.android.vndk.v33.apex:$(TARGET_COPY_OUT_SYSTEM_EXT)/apex/com.android.vndk.v33.apex \
-    vendor/xiaomi/air/proprietary/system_ext/app/BluetoothExtension/BluetoothExtension.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/BluetoothExtension/BluetoothExtension.apk \
     vendor/xiaomi/air/proprietary/system_ext/app/BluetoothExtension/oat/arm64/BluetoothExtension.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/BluetoothExtension/oat/arm64/BluetoothExtension.odex \
     vendor/xiaomi/air/proprietary/system_ext/app/BluetoothExtension/oat/arm64/BluetoothExtension.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/BluetoothExtension/oat/arm64/BluetoothExtension.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/app/DebugLoggerUI/DebugLoggerUI.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/DebugLoggerUI/DebugLoggerUI.apk \
     vendor/xiaomi/air/proprietary/system_ext/app/DebugLoggerUI/oat/arm64/DebugLoggerUI.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/DebugLoggerUI/oat/arm64/DebugLoggerUI.odex \
     vendor/xiaomi/air/proprietary/system_ext/app/DebugLoggerUI/oat/arm64/DebugLoggerUI.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/DebugLoggerUI/oat/arm64/DebugLoggerUI.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/app/EngineerMode/EngineerMode.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/EngineerMode/EngineerMode.apk \
     vendor/xiaomi/air/proprietary/system_ext/app/EngineerMode/oat/arm64/EngineerMode.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/EngineerMode/oat/arm64/EngineerMode.odex \
     vendor/xiaomi/air/proprietary/system_ext/app/EngineerMode/oat/arm64/EngineerMode.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/EngineerMode/oat/arm64/EngineerMode.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/app/LocationEM2/LocationEM2.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/LocationEM2/LocationEM2.apk \
     vendor/xiaomi/air/proprietary/system_ext/app/LocationEM2/oat/arm64/LocationEM2.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/LocationEM2/oat/arm64/LocationEM2.odex \
     vendor/xiaomi/air/proprietary/system_ext/app/LocationEM2/oat/arm64/LocationEM2.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/LocationEM2/oat/arm64/LocationEM2.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/app/MDMConfig/MDMConfig.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MDMConfig/MDMConfig.apk \
     vendor/xiaomi/air/proprietary/system_ext/app/MDMConfig/oat/arm64/MDMConfig.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MDMConfig/oat/arm64/MDMConfig.odex \
     vendor/xiaomi/air/proprietary/system_ext/app/MDMConfig/oat/arm64/MDMConfig.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MDMConfig/oat/arm64/MDMConfig.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/app/MDMLSample/MDMLSample.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MDMLSample/MDMLSample.apk \
     vendor/xiaomi/air/proprietary/system_ext/app/MDMLSample/oat/arm64/MDMLSample.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MDMLSample/oat/arm64/MDMLSample.odex \
     vendor/xiaomi/air/proprietary/system_ext/app/MDMLSample/oat/arm64/MDMLSample.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MDMLSample/oat/arm64/MDMLSample.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/app/MiraVision/MiraVision.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MiraVision/MiraVision.apk \
     vendor/xiaomi/air/proprietary/system_ext/app/MiraVision/oat/arm64/MiraVision.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MiraVision/oat/arm64/MiraVision.odex \
     vendor/xiaomi/air/proprietary/system_ext/app/MiraVision/oat/arm64/MiraVision.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MiraVision/oat/arm64/MiraVision.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/app/MiuiAudioMonitor/MiuiAudioMonitor.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MiuiAudioMonitor/MiuiAudioMonitor.apk \
-    vendor/xiaomi/air/proprietary/system_ext/app/MiuiDaemon/MiuiDaemon.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MiuiDaemon/MiuiDaemon.apk \
-    vendor/xiaomi/air/proprietary/system_ext/app/MiuiPrintSpooler/MiuiPrintSpooler.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MiuiPrintSpooler/MiuiPrintSpooler.apk \
     vendor/xiaomi/air/proprietary/system_ext/app/MiuiPrintSpooler/oat/arm64/MiuiPrintSpooler.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MiuiPrintSpooler/oat/arm64/MiuiPrintSpooler.odex \
     vendor/xiaomi/air/proprietary/system_ext/app/MiuiPrintSpooler/oat/arm64/MiuiPrintSpooler.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MiuiPrintSpooler/oat/arm64/MiuiPrintSpooler.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/app/MiuixEditor_global/MiuixEditor_global.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MiuixEditor_global/MiuixEditor_global.apk \
     vendor/xiaomi/air/proprietary/system_ext/app/MiuixEditor_global/oat/arm64/MiuixEditor_global.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MiuixEditor_global/oat/arm64/MiuixEditor_global.odex \
     vendor/xiaomi/air/proprietary/system_ext/app/MiuixEditor_global/oat/arm64/MiuixEditor_global.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MiuixEditor_global/oat/arm64/MiuixEditor_global.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/app/ModemTestBox/ModemTestBox.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/ModemTestBox/ModemTestBox.apk \
     vendor/xiaomi/air/proprietary/system_ext/app/ModemTestBox/oat/arm64/ModemTestBox.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/ModemTestBox/oat/arm64/ModemTestBox.odex \
     vendor/xiaomi/air/proprietary/system_ext/app/ModemTestBox/oat/arm64/ModemTestBox.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/ModemTestBox/oat/arm64/ModemTestBox.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/app/TeeService/TeeService.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/TeeService/TeeService.apk \
-    vendor/xiaomi/air/proprietary/system_ext/app/YGPS/YGPS.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/YGPS/YGPS.apk \
     vendor/xiaomi/air/proprietary/system_ext/app/YGPS/oat/arm64/YGPS.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/YGPS/oat/arm64/YGPS.odex \
     vendor/xiaomi/air/proprietary/system_ext/app/YGPS/oat/arm64/YGPS.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/YGPS/oat/arm64/YGPS.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/app/mediatek-res/mediatek-res.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/mediatek-res/mediatek-res.apk \
-    vendor/xiaomi/air/proprietary/system_ext/app/miuisystem/miuisystem.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/miuisystem/miuisystem.apk \
     vendor/xiaomi/air/proprietary/system_ext/app/miuisystem/oat/arm64/miuisystem.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/miuisystem/oat/arm64/miuisystem.odex \
     vendor/xiaomi/air/proprietary/system_ext/app/miuisystem/oat/arm64/miuisystem.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/miuisystem/oat/arm64/miuisystem.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/app/miuix/miuix.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/miuix/miuix.apk \
-    vendor/xiaomi/air/proprietary/system_ext/app/MtkCalendar/MtkCalendar.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/MtkCalendar/MtkCalendar.apk \
     vendor/xiaomi/air/proprietary/system_ext/bin/AudioSetParam:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/AudioSetParam \
     vendor/xiaomi/air/proprietary/system_ext/bin/DfcNativeService:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/DfcNativeService \
     vendor/xiaomi/air/proprietary/system_ext/bin/FboNativeService:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/FboNativeService \
@@ -4352,8 +4265,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/air/proprietary/system_ext/etc/permissions/privapp-permissions-miui-system-ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-miui-system-ext.xml \
     vendor/xiaomi/air/proprietary/system_ext/etc/permissions/system-ext-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/system-ext-permissions-mediatek.xml \
     vendor/xiaomi/air/proprietary/system_ext/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/r_submix_audio_policy_configuration.xml \
-    vendor/xiaomi/air/proprietary/system_ext/etc/security/fsverity/BuildManifestSystemExt.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/security/fsverity/BuildManifestSystemExt.apk \
-    vendor/xiaomi/air/proprietary/system_ext/etc/security/fsverity/BuildManifestSystemExt.apk.idsig:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/security/fsverity/BuildManifestSystemExt.apk.idsig \
     vendor/xiaomi/air/proprietary/system_ext/etc/selinux/bug_map:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/bug_map \
     vendor/xiaomi/air/proprietary/system_ext/etc/selinux/mapping/29.0.compat.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/29.0.compat.cil \
     vendor/xiaomi/air/proprietary/system_ext/etc/selinux/mapping/30.0.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/30.0.cil \
@@ -4382,78 +4293,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/air/proprietary/system_ext/etc/sysconfig/xiaomi_app_link_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/xiaomi_app_link_whitelist.xml \
     vendor/xiaomi/air/proprietary/system_ext/etc/task_profiles_cameraopt.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/task_profiles_cameraopt.json \
     vendor/xiaomi/air/proprietary/system_ext/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/usb_audio_policy_configuration.xml \
-    vendor/xiaomi/air/proprietary/system_ext/etc/vintf/manifest/manifest_hypsys_system.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vintf/manifest/manifest_hypsys_system.xml \
-    vendor/xiaomi/air/proprietary/system_ext/etc/vintf/manifest/mtk-mbrainj-default.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vintf/manifest/mtk-mbrainj-default.xml \
-    vendor/xiaomi/air/proprietary/system_ext/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vintf/manifest.xml \
     vendor/xiaomi/air/proprietary/system_ext/etc/wmshell.protolog.json.gz:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wmshell.protolog.json.gz \
-    vendor/xiaomi/air/proprietary/system_ext/framework/CapCtrlInterface.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/CapCtrlInterface.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/CapCtrlInterface.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/CapCtrlInterface.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/CustomPropInterface.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/CustomPropInterface.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/CustomPropInterface.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/CustomPropInterface.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/MiuiBooster.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/MiuiBooster.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/MiuiBooster.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/MiuiBooster.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/MiuiSettingsSearchLib.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/MiuiSettingsSearchLib.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/MiuiSettingsSearchLib.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/MiuiSettingsSearchLib.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/NetworkBoost.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/NetworkBoost.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/NetworkBoost.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/NetworkBoost.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/apprecovery.proinstaller.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/apprecovery.proinstaller.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/apprecovery.proinstaller.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/apprecovery.proinstaller.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/camerax-vendor-extensions.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/camerax-vendor-extensions.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/camerax-vendor-extensions.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/camerax-vendor-extensions.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/com.xiaomi.NetworkBoost.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.xiaomi.NetworkBoost.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/com.xiaomi.NetworkBoost.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.xiaomi.NetworkBoost.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/com.xiaomi.slalib.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.xiaomi.slalib.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/com.xiaomi.slalib.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.xiaomi.slalib.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/duraspeed.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/duraspeed.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/duraspeed.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/duraspeed.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/framework-ext-res/framework-ext-res.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/framework-ext-res/framework-ext-res.apk \
-    vendor/xiaomi/air/proprietary/system_ext/framework/framework-ext-res/framework-ext-res.apk.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/framework-ext-res/framework-ext-res.apk.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/global-cleaner-empty.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/global-cleaner-empty.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/global-cleaner-empty.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/global-cleaner-empty.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/gson.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/gson.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/gson.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/gson.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/log-handler.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/log-handler.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/log-handler.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/log-handler.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-carrier-config-manager.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-carrier-config-manager.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-carrier-config-manager.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-carrier-config-manager.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-common.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-common.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-framework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-framework.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-framework.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-framework.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-ims-base.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-ims-base.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-ims-base.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-ims-base.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-ims-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-ims-common.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-ims-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-ims-common.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-ims-extension-plugin.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-ims-extension-plugin.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-ims-extension-plugin.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-ims-extension-plugin.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-services.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-services.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-services.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-services.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-telecom-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telecom-common.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-telecom-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telecom-common.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-telephony-base.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telephony-base.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-telephony-base.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telephony-base.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telephony-common.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mediatek-telephony-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telephony-common.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mirilhook.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mirilhook.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/mirilhook.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mirilhook.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-cameraopt.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-cameraopt.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-cameraopt.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-cameraopt.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-connectivity-service.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-connectivity-service.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-connectivity-service.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-connectivity-service.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-enterprise-sdk.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-enterprise-sdk.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-enterprise-sdk.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-enterprise-sdk.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-framework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-framework.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-framework.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-framework.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-services.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-services.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-services.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-services.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-telephony-common.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-telephony-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-telephony-common.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-wifi-service.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-wifi-service.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miui-wifi-service.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miui-wifi-service.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miuix.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miuix.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/miuix.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/miuix.jar.fsv_meta \
     vendor/xiaomi/air/proprietary/system_ext/framework/oat/arm/CapCtrlInterface.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm/CapCtrlInterface.odex \
     vendor/xiaomi/air/proprietary/system_ext/framework/oat/arm/CapCtrlInterface.odex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm/CapCtrlInterface.odex.fsv_meta \
     vendor/xiaomi/air/proprietary/system_ext/framework/oat/arm/CapCtrlInterface.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm/CapCtrlInterface.vdex \
@@ -4654,16 +4494,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/air/proprietary/system_ext/framework/oat/arm64/xiaomi-telephony-common.odex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/xiaomi-telephony-common.odex.fsv_meta \
     vendor/xiaomi/air/proprietary/system_ext/framework/oat/arm64/xiaomi-telephony-common.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/xiaomi-telephony-common.vdex \
     vendor/xiaomi/air/proprietary/system_ext/framework/oat/arm64/xiaomi-telephony-common.vdex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/xiaomi-telephony-common.vdex.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/security-device-credential-sdk.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/security-device-credential-sdk.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/security-device-credential-sdk.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/security-device-credential-sdk.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/vendor.xiaomi.hardware.misys.common-V1-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.xiaomi.hardware.misys.common-V1-java.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/vendor.xiaomi.hardware.misys.common-V1-java.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.xiaomi.hardware.misys.common-V1-java.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/version-seperation.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/version-seperation.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/version-seperation.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/version-seperation.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/xiaomi-modem-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/xiaomi-modem-common.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/xiaomi-modem-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/xiaomi-modem-common.jar.fsv_meta \
-    vendor/xiaomi/air/proprietary/system_ext/framework/xiaomi-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/xiaomi-telephony-common.jar \
-    vendor/xiaomi/air/proprietary/system_ext/framework/xiaomi-telephony-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/xiaomi-telephony-common.jar.fsv_meta \
     vendor/xiaomi/air/proprietary/system_ext/lib/android.hardware.radio.config@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/android.hardware.radio.config@1.1.so \
     vendor/xiaomi/air/proprietary/system_ext/lib/android.hardware.radio.config@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/android.hardware.radio.config@1.2.so \
     vendor/xiaomi/air/proprietary/system_ext/lib/android.hardware.radio.config@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/android.hardware.radio.config@1.3.so \
@@ -5316,90 +5146,62 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/air/proprietary/system_ext/lib64/vendor.xiaomi.hw.touchfeature-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hw.touchfeature-V1-ndk.so \
     vendor/xiaomi/air/proprietary/system_ext/lib64/xiaomi.system.hypsys.common-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/xiaomi.system.hypsys.common-V1-ndk.so \
     vendor/xiaomi/air/proprietary/system_ext/permissions/version-seperation-ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/permissions/version-seperation-ext.xml \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/AccessibilityMenu/AccessibilityMenu.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/AccessibilityMenu/AccessibilityMenu.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/AccessibilityMenu/oat/arm64/AccessibilityMenu.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/AccessibilityMenu/oat/arm64/AccessibilityMenu.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/AccessibilityMenu/oat/arm64/AccessibilityMenu.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/AccessibilityMenu/oat/arm64/AccessibilityMenu.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/AtciService/AtciService.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/AtciService/AtciService.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/AtciService/oat/arm/AtciService.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/AtciService/oat/arm/AtciService.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/AtciService/oat/arm/AtciService.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/AtciService/oat/arm/AtciService.vdex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/AtciService/oat/arm64/AtciService.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/AtciService/oat/arm64/AtciService.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/AtciService/oat/arm64/AtciService.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/AtciService/oat/arm64/AtciService.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/AuthManager/AuthManager.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/AuthManager/AuthManager.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/AuthManager/oat/arm64/AuthManager.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/AuthManager/oat/arm64/AuthManager.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/AuthManager/oat/arm64/AuthManager.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/AuthManager/oat/arm64/AuthManager.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/CallRecorderService/CallRecorderService.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CallRecorderService/CallRecorderService.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/CallRecorderService/oat/arm64/CallRecorderService.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CallRecorderService/oat/arm64/CallRecorderService.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/CallRecorderService/oat/arm64/CallRecorderService.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CallRecorderService/oat/arm64/CallRecorderService.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/CarrierConfig/CarrierConfig.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CarrierConfig/CarrierConfig.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/CarrierConfig/oat/arm64/CarrierConfig.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CarrierConfig/oat/arm64/CarrierConfig.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/CarrierConfig/oat/arm64/CarrierConfig.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CarrierConfig/oat/arm64/CarrierConfig.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/ConfigurationClient/ConfigurationClient.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ConfigurationClient/ConfigurationClient.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/ConfigurationClient/oat/arm64/ConfigurationClient.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ConfigurationClient/oat/arm64/ConfigurationClient.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/ConfigurationClient/oat/arm64/ConfigurationClient.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ConfigurationClient/oat/arm64/ConfigurationClient.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/DuraSpeed/DuraSpeed.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/DuraSpeed/DuraSpeed.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/DuraSpeed/oat/arm64/DuraSpeed.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/DuraSpeed/oat/arm64/DuraSpeed.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/DuraSpeed/oat/arm64/DuraSpeed.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/DuraSpeed/oat/arm64/DuraSpeed.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/EmergencyInfoGms/EmergencyInfoGms.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EmergencyInfoGms/EmergencyInfoGms.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/EmergencyInfoGms/oat/arm64/EmergencyInfoGms.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EmergencyInfoGms/oat/arm64/EmergencyInfoGms.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/EmergencyInfoGms/oat/arm64/EmergencyInfoGms.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EmergencyInfoGms/oat/arm64/EmergencyInfoGms.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/FindDevice/FindDevice.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/FindDevice/FindDevice.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/FindDevice/oat/arm64/FindDevice.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/FindDevice/oat/arm64/FindDevice.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/FindDevice/oat/arm64/FindDevice.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/FindDevice/oat/arm64/FindDevice.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/GoogleFeedback/GoogleFeedback.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/GoogleFeedback/oat/arm64/GoogleFeedback.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/GoogleFeedback/oat/arm64/GoogleFeedback.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/GoogleFeedback/oat/arm64/GoogleFeedback.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/GoogleFeedback/oat/arm64/GoogleFeedback.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/GoogleServicesFramework/oat/arm64/GoogleServicesFramework.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/GoogleServicesFramework/oat/arm64/GoogleServicesFramework.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/GoogleServicesFramework/oat/arm64/GoogleServicesFramework.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/GoogleServicesFramework/oat/arm64/GoogleServicesFramework.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/ImsService/ImsService.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ImsService/ImsService.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/ImsService/oat/arm64/ImsService.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ImsService/oat/arm64/ImsService.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/ImsService/oat/arm64/ImsService.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ImsService/oat/arm64/ImsService.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/LPPeService/LPPeService.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/LPPeService/LPPeService.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/LPPeService/oat/arm64/LPPeService.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/LPPeService/oat/arm64/LPPeService.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/LPPeService/oat/arm64/LPPeService.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/LPPeService/oat/arm64/LPPeService.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/MiuiFreeformService/MiuiFreeformService.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MiuiFreeformService/MiuiFreeformService.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MiuiFreeformService/oat/arm64/MiuiFreeformService.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MiuiFreeformService/oat/arm64/MiuiFreeformService.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MiuiFreeformService/oat/arm64/MiuiFreeformService.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MiuiFreeformService/oat/arm64/MiuiFreeformService.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/MiuiSystemUI/MiuiSystemUI.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MiuiSystemUI/MiuiSystemUI.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MiuiSystemUI/oat/arm64/MiuiSystemUI.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MiuiSystemUI/oat/arm64/MiuiSystemUI.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MiuiSystemUI/oat/arm64/MiuiSystemUI.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MiuiSystemUI/oat/arm64/MiuiSystemUI.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/MiuiVpnDialogs/MiuiVpnDialogs.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MiuiVpnDialogs/MiuiVpnDialogs.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MiuiVpnDialogs/oat/arm64/MiuiVpnDialogs.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MiuiVpnDialogs/oat/arm64/MiuiVpnDialogs.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MiuiVpnDialogs/oat/arm64/MiuiVpnDialogs.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MiuiVpnDialogs/oat/arm64/MiuiVpnDialogs.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/MiuiWifiDialog/MiuiWifiDialog.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MiuiWifiDialog/MiuiWifiDialog.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MiuiWifiDialog/oat/arm64/MiuiWifiDialog.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MiuiWifiDialog/oat/arm64/MiuiWifiDialog.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MiuiWifiDialog/oat/arm64/MiuiWifiDialog.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MiuiWifiDialog/oat/arm64/MiuiWifiDialog.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/MtkCapCtrl/MtkCapCtrl.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MtkCapCtrl/MtkCapCtrl.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MtkCapCtrl/oat/arm64/MtkCapCtrl.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MtkCapCtrl/oat/arm64/MtkCapCtrl.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MtkCapCtrl/oat/arm64/MtkCapCtrl.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MtkCapCtrl/oat/arm64/MtkCapCtrl.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/MtkGbaService/MtkGbaService.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MtkGbaService/MtkGbaService.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MtkGbaService/oat/arm64/MtkGbaService.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MtkGbaService/oat/arm64/MtkGbaService.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MtkGbaService/oat/arm64/MtkGbaService.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MtkGbaService/oat/arm64/MtkGbaService.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/MtkTelephonyAssist/MtkTelephonyAssist.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MtkTelephonyAssist/MtkTelephonyAssist.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MtkTelephonyAssist/oat/arm64/MtkTelephonyAssist.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MtkTelephonyAssist/oat/arm64/MtkTelephonyAssist.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/MtkTelephonyAssist/oat/arm64/MtkTelephonyAssist.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/MtkTelephonyAssist/oat/arm64/MtkTelephonyAssist.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/Provision/Provision.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/Provision/Provision.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/Provision/oat/arm64/Provision.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/Provision/oat/arm64/Provision.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/Provision/oat/arm64/Provision.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/Provision/oat/arm64/Provision.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/RtMiCloudSDK/RtMiCloudSDK.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/RtMiCloudSDK/RtMiCloudSDK.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/RtMiCloudSDK/oat/arm/RtMiCloudSDK.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/RtMiCloudSDK/oat/arm/RtMiCloudSDK.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/RtMiCloudSDK/oat/arm/RtMiCloudSDK.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/RtMiCloudSDK/oat/arm/RtMiCloudSDK.vdex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/RtMiCloudSDK/oat/arm64/RtMiCloudSDK.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/RtMiCloudSDK/oat/arm64/RtMiCloudSDK.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/RtMiCloudSDK/oat/arm64/RtMiCloudSDK.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/RtMiCloudSDK/oat/arm64/RtMiCloudSDK.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/Settings/Settings.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/Settings/Settings.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/Settings/oat/arm64/Settings.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/Settings/oat/arm64/Settings.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/Settings/oat/arm64/Settings.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/Settings/oat/arm64/Settings.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/SetupWizard/SetupWizard.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/SetupWizard/SetupWizard.apk \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/SmartRatSwitch/SmartRatSwitch.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/SmartRatSwitch/SmartRatSwitch.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/SmartRatSwitch/oat/arm64/SmartRatSwitch.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/SmartRatSwitch/oat/arm64/SmartRatSwitch.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/SmartRatSwitch/oat/arm64/SmartRatSwitch.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/SmartRatSwitch/oat/arm64/SmartRatSwitch.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/StorageManager/StorageManager.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/StorageManager/StorageManager.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/StorageManager/oat/arm64/StorageManager.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/StorageManager/oat/arm64/StorageManager.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/StorageManager/oat/arm64/StorageManager.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/StorageManager/oat/arm64/StorageManager.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/VoiceUnlock/VoiceUnlock.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/VoiceUnlock/VoiceUnlock.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/VoiceUnlock/oat/arm64/VoiceUnlock.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/VoiceUnlock/oat/arm64/VoiceUnlock.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/VoiceUnlock/oat/arm64/VoiceUnlock.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/VoiceUnlock/oat/arm64/VoiceUnlock.vdex \
-    vendor/xiaomi/air/proprietary/system_ext/priv-app/WallpaperCropper/WallpaperCropper.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/WallpaperCropper/WallpaperCropper.apk \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/WallpaperCropper/oat/arm64/WallpaperCropper.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/WallpaperCropper/oat/arm64/WallpaperCropper.odex \
     vendor/xiaomi/air/proprietary/system_ext/priv-app/WallpaperCropper/oat/arm64/WallpaperCropper.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/WallpaperCropper/oat/arm64/WallpaperCropper.vdex \
     vendor/xiaomi/air/proprietary/system_ext/usp/usp-content-OP00.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-content-OP00.txt \
